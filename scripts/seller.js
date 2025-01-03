@@ -5,9 +5,6 @@ import { initializeData, getProducts, addProduct, updateProduct, deleteProduct }
 const renderProducts = () => {
     const products = getProducts();
     const tableBody = document.getElementById('products-table-body');
-    // const imgElement = document.getElementById('img');
-    // imgElement.src = product.image; 
-
     tableBody.innerHTML = products.map(product => `
         <tr>
             <td>${product.id}</td>
